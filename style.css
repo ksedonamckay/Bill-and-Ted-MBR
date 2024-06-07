@@ -1,0 +1,257 @@
+ <head>
+    <link rel='index.html' href='style.css'>
+html,body {
+    margin: 6 auto; /* Sets top and bottom margin to 0, and left and right margin to auto */
+    text-align: center; /* Centers inline elements horizontally within the body */
+}
+    padding: 4;
+}
+
+/* Global styles */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Hide default scrollbar for Firefox */
+}
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: url('https://i.pinimg.com/originals/fd/7c/cd/fd7ccd6dcf1b31d167a2cf7b35635e2f.jpg') no-repeat;
+  background-size: cover;
+  border-radius: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent; /* Set track background to transparent */
+}
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+.container {
+    margin-left: 10px; /* Adjust the value as needed */
+}
+}
+
+header {
+    background-color: #ff00ff; /* Magenta background */
+    color: #000; /* Black text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer {
+    background-color: #ff00ff; /* Magenta background */
+    color: #000; /* Black text */
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Heading styles */
+h1, h2, h3 {
+    font-family: "Arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 10px 0;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Link styles */
+a {
+    color: #ff00ff; /* Magenta link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for link color */
+}
+
+a:hover {
+    color: #ffaf00; /* Orange hover color */
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners for images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Drop shadow for images */
+}
+
+
+/* Video iframe styles */
+iframe {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners for iframes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Drop shadow for iframes */
+}
+ul {
+  list-style-type: none; /* Remove default bullet points */
+}
+
+li::before {
+  content: '★'; /* Use a Unicode character as bullet point */
+  margin-right: 10px; /* Add some space between the bullet point and text */
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  li {
+    position: relative;
+    padding-left: 20px;
+  }
+
+  li::before {
+    content: '★'; /* Bullet point star */
+    position: absolute;
+    left: 0;
+    color: #fff; /* Initial color */
+    animation: neonColors 2s linear infinite alternate; /* Animation for color change */
+  }
+
+  @keyframes neonColors {
+    0% {
+      color: #ff00ff; /* Initial color: neon pink */
+    }
+    25% {
+      color: #00ffcc; /* Neon cyan */
+    }
+    50% {
+      color: #ffff00; /* Neon yellow */
+    }
+    75% {
+      color: #00ffff; /* Neon blue */
+    }
+    100% {
+      color: #ff00ff; /* Back to neon pink */
+    }
+  }
+
+
+/* Button styles */
+.btn {
+    background-color: #f80; /* Orange button background */
+    color: #000; /* Black button text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 5px; /* Rounded corners for buttons */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Drop shadow for buttons */
+}
+
+.btn:hover {
+    background-color: #ff0; /* Yellow hover background */
+}
+
+/* Additional styles specific to your content can be added here */
+
+/* Fun animation for main heading */
+h1 {
+    animation: rainbowText 5s infinite; /* Rainbow text animation */
+}
+
+@keyframes rainbowText {
+    0% { color: #ff0000; } /* Red */
+    20% { color: #ff7f00; } /* Orange */
+    40% { color: #ffff00; } /* Yellow */
+    60% { color: #00ff00; } /* Green */
+    80% { color: #0000ff; } /* Blue */
+    100% { color: #8b00ff; } /* Purple */
+}
+
+/* Retro background pattern for body */
+body {
+    background-image: url('https://www.transparenttextures.com/patterns/tiny-grid.png'); /* Grid pattern */
+    background-color: #000;
+}
+
+/* Funky hover effect for links */
+a {
+    position: relative;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ff00ff; /* Magenta */
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+/* Glowing effect for buttons */
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.1); /* White with transparency */
+    border-radius: 50%;
+    transition: all 0.8s ease-in-out;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover::after {
+    width: 0;
+    height: 0;
+}
+
+/* Neon glow for header and footer */
+header, footer {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6), 0
+
+
